@@ -31,7 +31,7 @@
 */
 package com.adobe.utils {
 	
-	import flash.utils.Endian;
+	
 	
 	/**
 	 * Contains reusable methods for operations pertaining 
@@ -94,6 +94,10 @@ package com.adobe.utils {
 			
 			return s;
 		}
-	}
+		/** 返回一个随机数 n，其中 min <= n <= max。 */
+		public static function getRandom(max:int,min:int = 0):int{
+			return min+Math.round(Math.random()*(max - min));
+        }
+    }
 		
 }
